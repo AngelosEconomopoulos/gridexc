@@ -81,3 +81,30 @@ nav{
 }
 
 
+@media only screen and (max-width: 550px){
+
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.8fr 0.8fr 1.4fr 1fr;
+    grid-template-areas: 
+      "nav"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+    padding: 0;
+    grid-gap:0.3rem;
+  }
+
+  nav, .sidebar, .sidebar2, .content1, .content2, .content3, .footer{
+    border-radius: 0;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .sidebar2{
+    display: none;
+  }
+}
